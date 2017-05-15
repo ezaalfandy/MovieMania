@@ -30,6 +30,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.Adapters.MovieGridAdapter;
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.data.MovieContract;
 import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.model.Movie;
 
 
@@ -155,7 +157,7 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
+        View view = inflater.inflate(R.layout.fragment_main_activity, container, false);
 
         mGridView = (GridView) view.findViewById(R.id.gridview_movies);
 

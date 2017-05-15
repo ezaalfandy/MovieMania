@@ -9,10 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.github.ismaeltoe.movies.R;
-import com.github.ismaeltoe.movies.model.Trailer;
-
 import java.util.List;
+
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.R;
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.model.Trailer;
 
 /**
  * Created by MR AL on 15/05/2017.

@@ -7,6 +7,8 @@ import android.os.Parcelable;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.MainActivityFragment;
+
 /**
  * Created by MR AL on 15/05/2017.
  */

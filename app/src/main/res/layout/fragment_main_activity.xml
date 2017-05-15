@@ -1,13 +1,11 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview_movies"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.MainActivityFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+    android:numColumns="auto_fit"
+    android:columnWidth="@dimen/grid_item_movie_width"
+    android:verticalSpacing="@dimen/grid_item_movie_spacing"
+    android:horizontalSpacing="@dimen/grid_item_movie_spacing"
+    android:padding="@dimen/grid_item_movie_spacing"
+    android:drawSelectorOnTop="true" />

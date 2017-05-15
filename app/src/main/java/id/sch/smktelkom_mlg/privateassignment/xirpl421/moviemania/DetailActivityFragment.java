@@ -41,6 +41,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.Adapters.ReviewAdapter;
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.Adapters.TrailerAdapter;
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.data.MovieContract;
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.model.Movie;
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.model.Review;
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.model.Trailer;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -109,8 +116,8 @@ public class DetailActivityFragment extends Fragment {
                 @Override
                 protected void onPostExecute(Integer isFavorited) {
                     action_favorite.setIcon(isFavorited == 1 ?
-                            R.drawable.abc_btn_rating_star_on_mtrl_alpha :
-                            R.drawable.abc_btn_rating_star_off_mtrl_alpha);
+                            R.drawable.ic_star_black_24dp:
+                            R.drawable.ic_star_black_24dp);
                 }
             }.execute();
 
@@ -153,7 +160,7 @@ public class DetailActivityFragment extends Fragment {
 
                                     @Override
                                     protected void onPostExecute(Integer rowsDeleted) {
-                                        item.setIcon(R.drawable.abc_btn_rating_star_off_mtrl_alpha);
+                                        item.setIcon(R.drawable.ic_star_black_24dp);
                                         if (mToast != null) {
                                             mToast.cancel();
                                         }
@@ -184,7 +191,7 @@ public class DetailActivityFragment extends Fragment {
 
                                     @Override
                                     protected void onPostExecute(Uri returnUri) {
-                                        item.setIcon(R.drawable.abc_btn_rating_star_on_mtrl_alpha);
+                                        item.setIcon(R.drawable.ic_star_black_24dp);
                                         if (mToast != null) {
                                             mToast.cancel();
                                         }
@@ -211,7 +218,7 @@ public class DetailActivityFragment extends Fragment {
             mMovie = arguments.getParcelable(DetailActivityFragment.DETAIL_MOVIE);
         }
 
-        View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_detail_activity, container, false);
 
         mDetailLayout = (ScrollView) rootView.findViewById(R.id.detail_layout);
 

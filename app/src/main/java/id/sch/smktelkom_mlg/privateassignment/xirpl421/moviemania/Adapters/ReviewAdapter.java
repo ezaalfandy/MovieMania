@@ -8,11 +8,12 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.github.ismaeltoe.movies.R;
-import com.github.ismaeltoe.movies.model.Review;
+//import com.github.ismaeltoe.movies.R;
+//import com.github.ismaeltoe.movies.model.Review;
 
 import java.util.List;
 
+import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.R;
 import id.sch.smktelkom_mlg.privateassignment.xirpl421.moviemania.model.Review;
 
 /**
